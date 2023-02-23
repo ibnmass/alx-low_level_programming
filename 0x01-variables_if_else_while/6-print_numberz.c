@@ -1,20 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Succes)
- */
-
+* main - Print all single digit numbers using only putchar
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int n;
+	int digit;
 
-	for (n = 0 ; n < 10 ; n++)
-	{
-		putchar(n + '0');
-	}
+	for (digit = 0; digit < 10; digit++)
+	putchar(digit + '0');
+
 	putchar('\n');
+
 	return (0);
 }
-
