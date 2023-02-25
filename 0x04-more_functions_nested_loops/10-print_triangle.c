@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_triangle - check for a digit
@@ -8,7 +8,6 @@
 
 void print_triangle(int size)
 {
-
 	int i = 1, ii;
 
 	while (i <= size && size > 0)
@@ -32,4 +31,3 @@ void print_triangle(int size)
 	if (i == 1)
 		_putchar('\n');
 }
-

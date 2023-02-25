@@ -1,10 +1,4 @@
-#include "main.h"
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int _putchar(char c);
-
+#include "holberton.h"
 /**
  * print_number - prints numbers
  * @n: number to be printed
@@ -13,25 +7,15 @@ int _putchar(char c);
 
 void print_number(int n)
 {
+	unsigned int x;
 
-	unsigned int n1 = 0;
-
-	if  (n < 0)
+	x = n;
+	if (n < 0)
 	{
-		n1 = -n;
-		_putchar('-');
+		_putchar(45);
+		x = -n;
 	}
-
-	else
-	{
-		n1 = n;
-	}
-
-	if (n1 / 10)
-	{
-		print_number(n1 / 10);
-	}
-
-	_putchar((n1 % 10) + '0');
+	if (x / 10)
+		print_number(x / 10);
+	_putchar((x % 10) + '0');
 }
-
