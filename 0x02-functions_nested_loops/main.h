@@ -1,7 +1,7 @@
 
 /**
 *File:main.h
-*Author:Pericles Adjovi
+*Author:JDev
 *Desc:header file containing functions declaration
 */
 
